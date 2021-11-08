@@ -1,0 +1,46 @@
+package assignment;
+
+public class OneA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double usedcar=5000;
+		double down_payment=2000;
+		int loan=3000;
+		double interest=3.5;
+		int NumberOfYear=5;
+		
+		
+		//sum of interest
+		double SumOfInterest= ((loan*interest*NumberOfYear)/100);
+		//monthlypayment
+		double MonthlyPayment= ((interest/100)*loan) ;
+		//convert monthlypayment - double to int
+		int MonthlyPayment1= (int) MonthlyPayment;
+		
+		
+		
+		System.out.println("");
+		System.out.println("Enter the yearly interest rate, for example, 3.5: " + interest);
+		System.out.println("Enter the number of years as an integer, for example, 5: " + NumberOfYear );
+		System.out.println("Enter the loan amount, for example, 3000.00: " +loan);
+		System.out.println("The monthly payment is " +"$" + MonthlyPayment);
+		
+		
+		
+		double totalpayment=(MonthlyPayment*NumberOfYear*12);
+		
+		
+		System.out.println("The total payment is " +"$"+ totalpayment );
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
