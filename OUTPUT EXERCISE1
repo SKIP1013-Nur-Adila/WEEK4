@@ -1,0 +1,23 @@
+
+Enter your name: Kelvin Ong
+My name is Kelvin
+
+Enter your full name again: 
+My full name is Kelvin Ong
+
+Enter an integer: 
+22
+Enter Double value: 
+33.33
+Using nextInt() is 22
+Using nextDouble() is 33.33
+Using nextInt() increment by 1 is 23
+Using nextDouble() decrement by 1 is 32.33
+Using nextInt() increment by 5 is 28
+Using nextDouble() decrement by 5 is 27.33
+Using nextInt() mod 10 is 8
+Using nextInt() mod 10 is 7.329999999999998
+
+5.532837967243027E44
+
+4165331.8259815266
