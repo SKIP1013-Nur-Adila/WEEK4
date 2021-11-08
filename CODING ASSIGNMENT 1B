@@ -95,7 +95,7 @@ public class OneB {
 		System.out.println("Discount received : " +"RM"+ discount22);
 		}
 		
-		paid= totalsum-discount1;
+		paid= totalsum-discount22;
 		
 		System.out.println("Price to be paid : "+ "RM"+paid);
 		
