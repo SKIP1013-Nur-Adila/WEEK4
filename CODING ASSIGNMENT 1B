@@ -95,7 +95,13 @@ public class OneB {
 		System.out.println("Discount received : " +"RM"+ discount22);
 		}
 		
-		paid= totalsum-discount22;
+			if (totalsum<100) {
+			paid=totalsum-discount11;
+		} else
+		{
+			paid=totalsum-discount22;
+		}
+		
 		
 		System.out.println("Price to be paid : "+ "RM"+paid);
 		
