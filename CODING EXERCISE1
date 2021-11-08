@@ -1,0 +1,145 @@
+package myScanner;
+
+import java.util.Scanner;
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name;
+		String name1;
+		String fullname;
+		String fullname1;
+		int number;
+		Double number1;
+		int number2;
+		Double number3;
+		int m=5;
+		int x=++m;
+		double n=5;
+		double y=--n;
+		
+		
+
+		
+		
+		
+		Scanner myself = new Scanner(System.in);
+		
+		
+		
+		System.out.println("");
+		
+		
+		
+		
+		 //FIRST EXERCISE
+		 
+		  System.out.print("Enter your name: ");
+		name = myself.next();
+		
+		System.out.println("My name is " + name);
+		
+		//new 
+		
+		
+		System.out.print("\nEnter your full name again: \n");
+		fullname = myself.nextLine(); 
+		
+		System.out.println("My full name is "+ name+ fullname +"\n");
+		
+		
+		
+		//new
+		
+		/*
+		//SECOND EXERCISE
+		 System.out.println("Enter an integer: ");
+			number = myself.nextInt();
+			System.out.println("Enter Double value: ");
+			number1 = myself.nextDouble();
+			
+			System.out.println( "\n\nUsing nextInt(): " + number );
+			System.out.println( "Using nextDouble(): " + number1 );
+			
+			//System.out.println( number );
+		
+		
+		
+		//TRY TEST
+		
+		
+		 System.out.print("Enter your name: ");
+			name1 = myself.nextLine();
+			
+			System.out.printf("My name is %s \n" , name1);
+			System.out.printf("My full name is \n" , name1);
+		*/
+		
+		 System.out.println("Enter an integer: ");
+			number2 = myself.nextInt();
+			System.out.println("Enter Double value: ");
+			number3 = myself.nextDouble();
+			
+			
+			System.out.println("Using nextInt() is " + number2);
+			System.out.println("Using nextDouble() is " + number3);
+			
+			number2 ++;
+			number3 --;
+			
+			System.out.println("Using nextInt() increment by 1 is " + number2);
+			System.out.println("Using nextDouble() decrement by 1 is " + number3);
+			
+			
+			
+			//new
+			
+			number2 +=5;
+			number3 -=5;
+			
+			System.out.println("Using nextInt() increment by 5 is " + number2);
+			System.out.println("Using nextDouble() decrement by 5 is " + number3);
+			
+			number2 %=10;
+			number3 %=10;
+			
+			System.out.println("Using nextInt() mod 10 is " + number2);
+			System.out.println("Using nextInt() mod 10 is " + number3);
+			
+			//math.power
+			
+			
+			//number is assigned
+			int number4 = 22;
+			double number5 = 33.33;
+			double u =Math.pow(number4,number5);
+			System.out.println();
+			System.out.println(u);
+			
+			//from user input 
+			double v =Math.pow(number2,number3);
+			System.out.println();
+			System.out.println(v);
+
+			
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 * 
+		 * 
+		Enter your name:kelvin Ong
+		My name is kelvin
+		Enter your full name again:
+		My full name is kelvin ong
+		
+		*/
+
+	}
+
+}
