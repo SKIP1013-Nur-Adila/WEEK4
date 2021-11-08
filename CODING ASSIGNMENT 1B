@@ -1,0 +1,114 @@
+package assignment;
+
+import java.util.Scanner;
+public class OneB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int items;
+		int firstprice;
+		int secondprice;
+		int thirdprice;
+		int quantity;
+		int quantity2;
+		int quantity3;
+		int total1;
+		int total2;
+		int total3;
+		int totalsum;
+		double discount1=10;
+		double discount2=20;
+		double discount11;
+		double discount22;
+		double paid;
+		
+		
+		
+		
+		Scanner MARTS = new Scanner(System.in);
+		
+		
+		System.out.println("");
+		
+		
+		//maximum item is 3
+		System.out.print("Enter the number of items: ");
+		items = MARTS.nextInt(4);
+		
+		
+		
+		//first
+		System.out.print("Enter the price of first items: ");
+		firstprice = MARTS.nextInt();
+		System.out.print("Enter the quantity of first item: ");
+		quantity = MARTS.nextInt();
+		
+		total1= firstprice*quantity ;
+		
+	System.out.println("\n");
+		
+	//second
+		System.out.print("Enter the price of second items: ");
+		secondprice = MARTS.nextInt();
+		System.out.print("Enter the quantity of second item: ");
+		quantity2 = MARTS.nextInt();
+		
+		total2= secondprice* quantity2 ;
+		
+	System.out.println("\n");
+		
+	//third
+		System.out.print("Enter the price of third items: ");
+		thirdprice = MARTS.nextInt();
+		System.out.print("Enter the quantity of second item: ");
+		quantity3 = MARTS.nextInt();
+		
+		total3=quantity3 *thirdprice;
+		
+	System.out.println("\n");
+	
+		totalsum= total1+total2+total3;
+		
+		
+		
+		
+	
+		System.out.println("Total price : " + "RM"+totalsum);
+		
+		int totals= totalsum;
+		
+		/*
+		if(totals<100) {
+			discount=((10/100)*totals);
+		}else {
+			discount=((20/100)*totals);
+		}
+		*/
+		
+		discount11=((discount1/100)*totalsum);
+		discount22=((discount2/100)*totalsum);
+		
+		if (totalsum<100) {
+		System.out.println("Discount received : " +"RM"+ discount11);
+		}else {
+		System.out.println("Discount received : " +"RM"+ discount22);
+		}
+		
+		paid= totalsum-discount1;
+		
+		System.out.println("Price to be paid : "+ "RM"+paid);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
